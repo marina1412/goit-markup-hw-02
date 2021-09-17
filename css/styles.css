@@ -9,7 +9,7 @@
     --footer-address: rgba(255, 255, 255, 0.6);
 }
 body{
-    font-family: Roboto;
+    font-family: Roboto sans-serif;
     font-style: normal;
     color: var(--text-color);
     background-color: var(--primary-title-color);
@@ -47,6 +47,11 @@ li{list-style-type: none;}
 .link-address{
     color: var(--text-color);
 }
+
+.link-address:hover, .link-address:focus{
+    color: var(--accent-color)
+}
+
 .nav{
     font-weight: 500;
     font-size: 14px;
@@ -84,6 +89,8 @@ li{list-style-type: none;}
     align-items: center;
     text-align: center;
     letter-spacing: 0.06em;
+
+    cursor: pointer;
 }
 /*Стили main*/
 .section-title, 
@@ -91,11 +98,41 @@ li{list-style-type: none;}
 .comand-title{
     color: var(--title-color);
 }
+.section-title{
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+}
+.p-title{
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+}
+.text{
+    font-size: 14px;
+    line-height: 1.7;}
 .section-comanda{
     background-color: var(--fone-color);
 }
+.comand-title{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+}
+.profession{
+    font-size: 16px;
+    line-height: 1.19;
+}
 .footer{
     background-color: var(--fone-color-black);
+}
+.footer-logo{
+    font-family: Raleway;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
 }
 .footer-web{
     color: var(--accent-color);
@@ -106,9 +143,17 @@ li{list-style-type: none;}
 .footer-address{
     color: var(--primary-title-color);
     font-style: normal;
+    font-size: 14px;
+    line-height: 1.7;
 }
 .contacts{
     color: var(--footer-address);
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 1.7;
+}
+.contacts:focus, .contacts:hover{
+    color: var(--accent-color);
 }
 
 
@@ -117,6 +162,12 @@ li{list-style-type: none;}
     background-color: (--fone-color);
     color: (--title-color);
     font-family: inherit;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.63;
+    text-align: center;
+
+    cursor: pointer;
 }
 .btn-portfolio:focus,
 .btn-portfolio:hover{
@@ -126,7 +177,15 @@ li{list-style-type: none;}
 }
 .work-title{
     color: var(--title-color);
+
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
 }
 .work-text{
-    color:var(--text-color)
+    font-size: 16px;
+    line-height: 1.87;
+
+    color: var(--text-color);
 }
